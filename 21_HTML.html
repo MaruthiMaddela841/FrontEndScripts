@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1 id="myHeader">My Header</h1>
+<button onclick="displayResult()">Change text</button>
+
+<iframe src="https://www.google.com" height="200" width="300" title="Iframe Example"></iframe>
+<iframe src="demo_iframe.htm" style="border:none;border:2px solid red;" title="Iframe Example"></iframe>
+<iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+</body>
+<script>
+    function displayResult() {
+      document.getElementById("myHeader").innerHTML = "Have a nice day!";
+    }
+    </script>
+</html>
